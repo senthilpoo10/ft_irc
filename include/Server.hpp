@@ -1,25 +1,3 @@
-<<<<<<< HEAD
-#ifndef SERVER_HPP
-#define SERVER_HPP
-
-class Server
-{
-  private:
-        std::string serverName;
-        std::string Port;
-        std::string PassWord;
-
-  public:
-        Server(std::string Port, std::string PassWord);
-        ~Server();
-
-        std::string getHostName();
-        void    setHostName(std::string name);
-        void    startServer();
-};
-
-#endif
-=======
 #ifndef SERVER_HPP
 #define SERVER_HPP
 
@@ -38,8 +16,7 @@ class Server
         std::map<int , Client> clientList;
         std::map<int, std::string> clientMessage;
         int _index;
-        
-        
+             
         void    creatSocket();
         std::string getTime();
         void    addToPollfds(int newfd);
@@ -55,4 +32,3 @@ class Server
 };
 
 #endif
->>>>>>> 99a31ba (added code for server start and listening the port)
