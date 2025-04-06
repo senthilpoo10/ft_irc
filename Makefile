@@ -6,7 +6,7 @@
 #    By: pchennia <pchennia@student.42.fi>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2025/03/13 13:07:43 by pchennia          #+#    #+#              #
-#    Updated: 2025/03/13 13:16:34 by pchennia         ###   ########.fr        #
+#    Updated: 2025/04/06 10:30:08 by pchennia         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -14,7 +14,7 @@ NAME := irc
 CC := c++
 CFLAGS := -Wall -Wextra -Werror -std=c++11 -g
 
-SRCS = src/main.cpp
+SRCS = src/main.cpp src/Client.cpp src/Server.cpp 
 OBJS := $(SRCS:.cpp=.o)
 
 GREEN = \033[0;32m

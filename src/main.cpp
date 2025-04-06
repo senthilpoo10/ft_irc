@@ -5,12 +5,16 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: pchennia <pchennia@student.42.fi>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/03/13 13:12:27 by pchennia          #+#    #+#             */
-/*   Updated: 2025/03/13 13:15:59 by pchennia         ###   ########.fr       */
+/*   Created: 2023/09/29 21:09:14 by aouhadou          #+#    #+#             */
+/*   Updated: 2025/04/06 09:52:00 by pchennia         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+<<<<<<< HEAD
 #include "../include/Server.hpp"
+=======
+#include "../include/Headers.hpp"
+>>>>>>> 99a31ba (added code for server start and listening the port)
 
 int isValidArgs(char **av) {
     std::string port = av[0];
@@ -35,11 +39,22 @@ int isValidArgs(char **av) {
 }
 
 int main(int argc, char **argv)
+<<<<<<< HEAD
 {
     if (argc != 3 || isValidArgs(&argv[1])){
+=======
+{   
+    if (argc != 3 || isValidArgs(&argv[1]))
+    {
+>>>>>>> 99a31ba (added code for server start and listening the port)
         std::cout << "USAGE : " << RED << "./irc_serv [port] [password]" << RESET << std::endl;
         return 1;
     }
     Server server(argv[1], argv[2]);
+<<<<<<< HEAD
     server.startServer();
 }
+=======
+    server.startServer();    
+}
+>>>>>>> 99a31ba (added code for server start and listening the port)
