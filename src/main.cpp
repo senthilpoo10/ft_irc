@@ -10,11 +10,7 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-<<<<<<< HEAD
-#include "../include/Server.hpp"
-=======
 #include "../include/Headers.hpp"
->>>>>>> 99a31ba (added code for server start and listening the port)
 
 int isValidArgs(char **av) {
     std::string port = av[0];
@@ -39,22 +35,12 @@ int isValidArgs(char **av) {
 }
 
 int main(int argc, char **argv)
-<<<<<<< HEAD
 {
-    if (argc != 3 || isValidArgs(&argv[1])){
-=======
-{   
     if (argc != 3 || isValidArgs(&argv[1]))
     {
->>>>>>> 99a31ba (added code for server start and listening the port)
         std::cout << "USAGE : " << RED << "./irc_serv [port] [password]" << RESET << std::endl;
         return 1;
     }
     Server server(argv[1], argv[2]);
-<<<<<<< HEAD
-    server.startServer();
+    server.startServer();   
 }
-=======
-    server.startServer();    
-}
->>>>>>> 99a31ba (added code for server start and listening the port)
